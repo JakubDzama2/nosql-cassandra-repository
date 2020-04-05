@@ -29,7 +29,11 @@ public class App2 {
 //		System.out.println(repositoryService.findByPriezvisko("Vuko"));
 //		System.out.println(repositoryService.findByTitul("RNDr."));
 //		System.out.println(repositoryService.findByTitul("RNDr."));
-		System.out.println(repositoryService.findByIdAndPriezvisko(1006326L, "Guta"));
+//		System.out.println(repositoryService.findByIdAndPriezvisko(1006326L, "Guta"));
+		
+//		repositoryService.insertAllSkratStudProgStudents();
+//		repositoryService.printSkratStudProgStudents();
+		System.out.println(repositoryService.findBySkratkaStudijnehoProgramu("CH"));
 		
 		context.getBean(Session.class).getCluster().close();
 		context.close();

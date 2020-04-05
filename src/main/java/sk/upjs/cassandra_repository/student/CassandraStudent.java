@@ -11,6 +11,7 @@ import org.springframework.data.cassandra.core.mapping.CassandraType;
 import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKeyColumn;
 import org.springframework.data.cassandra.core.mapping.Table;
+import org.springframework.data.cassandra.core.mapping.UserDefinedType;
 
 import com.datastax.driver.core.DataType.Name;
 
@@ -41,6 +42,7 @@ import sk.upjs.nosql_data_source.entity.Student;
   
  */
 
+@UserDefinedType("student")
 @Table(value = "student")
 public class CassandraStudent {
 	
